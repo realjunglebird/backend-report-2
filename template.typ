@@ -87,6 +87,7 @@
 
   // 6. ЛИСТИНГИ С КОДОМ
   show figure.where(kind: raw): it => block(width: 100%, breakable: true)[
+    #set par(first-line-indent: 0pt)
     #set align(left)
     #text(size: 12pt)[Листинг #it.counter.display()#if it.has("caption") [ — #it.caption.body ]]
     #it.body
